@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="search-bar">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="input-box" placeholder="What do you want to play?">
+                <div class="browse"><i class="fa-solid fa-folder-open"></i></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-half-p1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-p2">
+                <div class="nav-text"><i class="fa-regular fa-circle-down"></i> Install App</div>
+                <div class="nav-text">Sign up</div>
+                <button class="login-btn">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="main-left-part">
+            <div class="library">
+                <p>Your Library</p>
+                <div>+</div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="box">
+                    <div class="box">
+                        <h4>Let's find some podcast to follow</h4>
+                        <p>We'll keep you updated on new updates</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Popular songs</h2>
+                <div class="scrollWrapper">
+                    <button class="scrollBtn left">❮</button>
+                    <div class="songs">
+                        <div class="music-card">
+                            <img src="https://c.saavncdn.com/581/Dhurandhar-The-Revenge-Hindi-2026-20260324162314-500x500.jpg"
+                                alt="">
+                            <div class="music-play-btn"><i id="1" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Jaan Se Guzarte Hain</div>
+                            <div class="img-description">Khan Saab</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/275/Tu-Hi-Disda-From-Bhooth-Bangla-Hindi-2026-20260324145409-500x500.jpg">
+                            <div class="music-play-btn"><i id="2" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tu Hi Disda</div>
+                            <div class="img-description">Arijit Singh</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/265/Ek-Din-Original-Motion-Picture-Soundtrack-Hindi-2026-20260403143442-500x500.jpg">
+                            <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Ek Din</div>
+                            <div class="img-description">Ram Sampath</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/686/Touch-Buddy-From-Dacoit-Hindi-Hindi-2026-20260326163642-500x500.jpg">
+                            <div class="music-play-btn"><i id="4" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Touch Buddy</div>
+                            <div class="img-description">Pawan Singh</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/846/Chand-Dekh-Lena-From-Maatrubhumi-May-War-Rest-in-Peace-Hindi-2026-20260318185557-500x500.jpg">
+                            <div class="music-play-btn"><i id="5" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Chand Dekh lena</div>
+                            <div class="img-description">Himesh Reshamiya</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/776/Tabaahi-From-Toxic-Hindi-2026-20260302122113-500x500.jpg">
+                            <div class="music-play-btn"><i id="6" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Tabaahi</div>
+                            <div class="img-description">Vishal Mishra</div>
+                        </div>
+                    </div>
+                    <button class="scrollBtn Right">❯</button>
+                </div>
+            </div>
+
+            <div class="music-section">
+                <h2>Recomended songs</h2>
+                <div class="scrollWrapper">
+                    <button class="scrollBtn left">❮</button>
+
+                    <div class="songs">
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/504/Arz-Kiya-Hai-Coke-Studio-Bharat-Hindi-2025-20250818054005-500x500.jpg">
+                            <div class="music-play-btn"><i id="7" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Arz Kiya Hai</div>
+                            <div class="img-description">Anuv Jain</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/856/Sitaare-From-Ikkis-Hindi-2025-20251203170135-500x500.jpg">
+                            <div class="music-play-btn"><i id="8" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Sitaara</div>
+                            <div class="img-description">Arijit Singh</div>
+                        </div>
+                        <div class="music-card">
+                            <img src="https://c.saavncdn.com/967/Aaj-Bhi-2-Hindi-2024-20240910053147-500x500.jpg">
+                            <div class="music-play-btn"><i id="9" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Aaj Bhi 2</div>
+                            <div class="img-description">Vishal Mishra</div>
+                        </div>
+                        <div class="music-card">
+                            <img src="https://c.saavncdn.com/485/Sahiba-Hindi-2024-20241112165036-500x500.jpg">
+                            <div class="music-play-btn"><i id="10" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Sahiba</div>
+                            <div class="img-description">Stebin ben</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/795/BORDER-2-Original-Motion-Picture-Soundtrack-Hindi-2026-20260119121003-500x500.jpg">
+                            <div class="music-play-btn"><i id="11" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Jaate Hue Lamhon</div>
+                            <div class="img-description">Vishal Mishra</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/581/Dhurandhar-The-Revenge-Hindi-2026-20260324162314-500x500.jpg">
+                            <div class="music-play-btn"><i id="12" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Aari Aari</div>
+                            <div class="img-description">Shashwat Sachdev</div>
+                        </div>
+                    </div>
+                    <button class="scrollBtn Right">❯</button>
+                </div>
+            </div>
+
+            <div class="music-section">
+                <h2>Rescently played</h2>
+                <div class="scrollWrapper">
+                    <button class="scrollBtn left">❮</button>
+
+                    <div class="songs">
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/307/Dhun-From-Saiyaara-Hindi-2025-20250630103138-500x500.jpg">
+                            <div class="music-play-btn"><i id="13" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dhun</div>
+                            <div class="img-description">Arijit Singh</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/663/Mera-Hua-From-Ek-Deewane-Ki-Deewaniyat-Original-Motion-Picture-Soundtrack-Hindi-2025-20251001170605-500x500.jpg">
+                            <div class="music-play-btn"><i id="14" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Mera Hua</div>
+                            <div class="img-description">Sachin Urmtosh</div>
+                        </div>
+                        <div class="music-card">
+                            <img
+                                src="https://c.saavncdn.com/450/Gehra-Hua-From-Dhurandhar-Hindi-2025-20251205154217-500x500.jpg">
+                            <div class="music-play-btn"><i id="15" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Ghera Hua</div>
+                            <div class="img-description">Arijit Singh</div>
+                        </div>
+                        <div class="music-card">
+                            <img src="https://c.saavncdn.com/598/Saiyaara-Hindi-2025-20250703061754-500x500.jpg">
+                            <div class="music-play-btn"><i id="16" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Saiyaara</div>
+                            <div class="img-description">Tanishk Bagchi</div>
+                        </div>
+                        <div class="music-card">
+                            <img src="https://c.saavncdn.com/831/Dil-Chahte-Ho-Hindi-2020-20200828084001-500x500.jpg">
+                            <div class="music-play-btn"><i id="17" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dil Chahte Ho</div>
+                            <div class="img-description">Jubin Nautiyal</div>
+                        </div>
+                        <div class="music-card">
+                            <img src="https://c.saavncdn.com/349/Is-Qadar-Hindi-2021-20210408051001-500x500.jpg">
+                            <div class="music-play-btn"><i id="18" class="playMusic fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Is Qadar</div>
+                            <div class="img-description">Darshan Raval</div>
+                        </div>
+                    </div>
+                    <button class="scrollBtn Right">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="https://c.saavncdn.com/581/Dhurandhar-The-Revenge-Hindi-2026-20260324162314-500x500.jpg" alt="">
+            <div>
+                <div class="img-title-info">Jaan Se Guzarte Hain</div>
+                <div class="img-des-info">Khan Saab</div>
+            </div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <div><i id="shuffle" class="player-btns fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="player-btns fa-solid fa-backward-step"></i></div>
+                <div><i id="play" class="player-btns fa-solid fa-circle-play"></i></div>
+                <div><i id="forward" class="player-btns fa-solid fa-forward-step"></i></div>
+                <div><i id="repeat" class="player-btns fa-solid fa-repeat"></i></div>
+            </div>
+
+            <div>
+                <input type="range" id="progressBar" value="0">
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
